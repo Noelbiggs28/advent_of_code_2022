@@ -1,21 +1,22 @@
-# def contained(file):
-#     total_all_included = 0
-#     with open(file, 'r') as infile:
-#         for line in infile:
-#             line = line.strip()
-#             arr = line.split(',')
-#             arr2 = arr[0].split('-')
-#             arr3 = arr[1].split('-')
-#             if int(arr3[0])<=int(arr2[0])<=int(arr3[1]) and int(arr3[0])<=int(arr2[1])<=int(arr3[1]) or int(arr2[0])<=int(arr3[0])<=int(arr2[1]) and int(arr2[0])<=int(arr3[1])<=int(arr2[1]):
-#                 total_all_included += 1
+def contained(file):
+    total_all_included = 0
+    with open(file, 'r') as infile:
+        for line in infile:
+            line = line.strip()
+            arr = line.split(',')
+            arr2 = arr[0].split('-')
+            arr3 = arr[1].split('-')
+            if int(arr3[0])<=int(arr2[0])<=int(arr3[1]) and int(arr3[0])<=int(arr2[1])<=int(arr3[1]) or int(arr2[0])<=int(arr3[0])<=int(arr2[1]) and int(arr2[0])<=int(arr3[1])<=int(arr2[1]):
+                total_all_included += 1
 
-#     return total_all_included
+    return total_all_included
 
-# print(contained('cleaning.txt'))
+print(contained('cleaning.txt'))
 
 # #193 is too low
 # #added =
 # #472 too low
+# added ints to line 9
 
 def overlap(file):
     total_overlapped = 0
