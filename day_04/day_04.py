@@ -14,7 +14,7 @@ def contained(file):
 print(contained('cleaning.txt'))
 
 # #193 is too low
-# #added =
+# #added = signs
 # #472 too low
 # added ints to line 9
 
