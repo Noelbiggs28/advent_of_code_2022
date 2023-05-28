@@ -23,7 +23,6 @@ def find_badge():
         for line in infile:
             line = line.strip()
             ls[row]=line
-            common_letter = []
             row += 1
             if row == 3:
                 row = 0

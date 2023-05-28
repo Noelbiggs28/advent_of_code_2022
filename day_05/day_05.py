@@ -23,5 +23,7 @@ def part1(instructions):
             ls[to] = ls[to] + crate
     return ls
 # WJVRLSJJT
+# DHBJQJCCW
+#
 print(part1('instructions.txt'))
 # blocks are moved one at a time
