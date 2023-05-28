@@ -18,8 +18,10 @@ def part1(instructions):
             begin = int(arr[3])
             to = int(arr[5])
             crate= ls[begin][-move:]
+            crate = crate[::-1]
             ls[begin] = ls[begin][:-move]
             ls[to] = ls[to] + crate
     return ls
 # WJVRLSJJT
 print(part1('instructions.txt'))
+# blocks are moved one at a time
