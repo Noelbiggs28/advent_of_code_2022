@@ -1,2 +1,2 @@
  25 days of coding challenges.
-https://adventofcode.com/
+https://adventofcode.com/2022

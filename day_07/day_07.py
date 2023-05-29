@@ -4,4 +4,4 @@ def count_data(file):
             print(line.strip())
 
 
-print(count_data('list_of_commands.txt'))
+print(count_data('practice.txt'))
