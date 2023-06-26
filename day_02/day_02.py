@@ -35,3 +35,24 @@ def shoot2():
     return total_score 
 print(shoot())
 print(shoot2())
+
+def shoot3():
+    score = {
+            'A': 1,
+            'B': 2,
+            'C': 3,
+            'X': 1,
+            'Y': 2,
+            'Z': 3,
+        }
+    player_02 = 0
+    with open('strategy.txt', 'r') as infile:
+        for line in infile:
+            print(line[0], line[2])
+            player_02 += score[line[2]]
+            if score[line[0]] < score[line[2]]:
+                player_02 += 6
+            elif score[line[0]] == score[line[2]]:
+                player_02 += 3
+    return player_02
+print(shoot3())
