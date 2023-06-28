@@ -40,7 +40,7 @@ class Forest:
                 line = line.strip()
                 x = 0
                 for num in line:
-                    dashes[x][y] = Tree(num, x, y)
+                    dashes[y][x] = Tree(num, y, x)
                     x+=1
                 y += 1
         return dashes
